@@ -2,7 +2,7 @@
 
 name = 'blosc'
 
-version = '1.5.0-ta.1.0.0'
+version = '1.5.0-ta.1.1.0'
 
 authors = [
     'benjamin.skinner',
@@ -39,3 +39,4 @@ def commands():
     env.BLOSC_BINARY_DIR.set("{root}/bin")
 
     env.PATH.append( str(env.BLOSC_BINARY_DIR) )
+    env.PATH.append( str(env.BLOSC_LIBRARY_DIR) )
